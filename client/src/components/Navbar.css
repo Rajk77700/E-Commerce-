@@ -1,0 +1,100 @@
+
+.navcontainer {
+    background-color: #093864;
+    padding: 10px 0;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 5rem; /* Adjust this value based on your navbar height */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 3.5rem;
+    
+}
+
+.logo a {
+    
+    color: rgb(247, 71, 62);
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: rgb(186, 206, 249);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 900;
+}
+
+li a:hover {
+    color: rgb(9, 153, 169);
+    font-weight: 600;
+    color: #dd7027;
+}
+
+
+/* this css is for media querry */
+
+@media only screen and (max-width: 720px) {
+    .container {
+        padding: 0 20px;
+        height: 12rem;
+    }
+    body {
+        padding-top: 14rem; 
+    }
+    
+
+    .logo {
+        font-size: 1rem; 
+    }
+    .logo a {
+        color: rgb(249, 20, 20);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(44, 87, 150);
+        width: 12rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+
+    }
+}
